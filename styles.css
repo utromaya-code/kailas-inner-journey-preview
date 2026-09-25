@@ -219,3 +219,6 @@
 
 /* Keep Simona and her camera in frame across card sizes. */
 .guide-simona .guide-image img{object-position:center 76%}
+
+/* Keep the candle, hands and bowls visible in the meditation image. */
+.practice-image img{object-position:center 75%}
