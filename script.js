@@ -11,3 +11,10 @@ programToggle.addEventListener('click', () => {
   updateProgramToggle();
 });
 programDays.forEach(day => day.addEventListener('toggle', updateProgramToggle));
+
+function openLinkedDay() {
+  const linked = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+  if (linked?.classList.contains('day')) linked.open = true;
+}
+window.addEventListener('hashchange', openLinkedDay);
+openLinkedDay();
