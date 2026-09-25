@@ -216,3 +216,6 @@
  .signature-card--kora h3{font-size:3.35rem}
  .signature-prologue strong{font-size:18px}
 }
+
+/* Keep Simona and her camera in frame across card sizes. */
+.guide-simona .guide-image img{object-position:center 76%}
