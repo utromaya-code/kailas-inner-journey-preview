@@ -28,7 +28,7 @@
 /* Sacred geography and expanded portrait/photo presentation */
 .sacred{background:#f3ece0}.sacred .section-heading>p{max-width:430px}.sacred-lead{display:grid;grid-template-columns:.85fr 1.15fr;background:var(--wine);color:var(--paper);min-height:580px}.sacred-visual{position:relative;overflow:hidden;min-height:580px}.sacred-visual img{height:100%;position:absolute;inset:0;object-position:center 44%}.sacred-visual:after{content:'';position:absolute;inset:65% 0 0;background:linear-gradient(transparent,#16131cab)}.sacred-visual span{position:absolute;z-index:1;left:25px;bottom:24px;font-size:12px;font-weight:600;letter-spacing:.12em}.sacred-text{padding:55px 8%;align-self:center}.sacred-big{font-size:clamp(2.6rem,4.2vw,5rem);line-height:1.08;letter-spacing:-.055em;font-weight:500;margin-bottom:35px}.sacred-big em{font-family:'Cormorant Garamond',Georgia,serif;color:var(--yellow);font-weight:400}.sacred-text>p:not(.sacred-big){font-size:16px;line-height:1.75;color:#f2e7e9}.sacred-insight{border-top:1px solid #ffffff55;margin-top:28px;padding-top:20px;font-size:13px;letter-spacing:.01em;color:var(--yellow)}.sacred-stories{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:#ccbdad;margin-top:24px}.sacred-stories article{background:#fffaf1;padding:38px 42px 45px}.sacred-stories span{color:var(--red);font-size:12px;letter-spacing:.1em;font-weight:700}.sacred-stories h3{font-size:clamp(1.7rem,2.4vw,2.6rem);margin-top:17px;max-width:500px}.sacred-stories p{color:var(--muted);font-size:15px;line-height:1.75;margin-top:20px;max-width:610px}
 .gallery-extra{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:18px}.gallery-extra figure{height:220px}.gallery-extra figure:nth-child(3){grid-row:span 2;height:auto}.gallery-extra figure:nth-child(3) img{object-position:58% center}.gallery-extra figure:nth-child(4),.gallery-extra figure:nth-child(5),.gallery-extra figure:nth-child(6){height:220px}
-.team-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:45px}.guide{min-width:0;background:#f0e9dd;display:flex;flex-direction:column;overflow:hidden}.guide-image{position:relative;height:clamp(340px,37vw,520px);overflow:hidden;background:#493c38}.guide-image img{height:100%;object-position:center 37%;transition:transform .5s ease}.guide:hover img{transform:scale(1.035)}.guide-image:after{content:'';position:absolute;inset:62% 0 0;background:linear-gradient(transparent,#151d26a6)}.guide-image span{position:absolute;z-index:1;left:22px;bottom:20px;color:white;font-size:12px;letter-spacing:.09em;font-weight:600}.guide-andrey .guide-image img{object-position:71% 32%}.guide-copy{padding:29px 28px 34px;display:flex;flex:1;flex-direction:column;align-items:flex-start}.guide-copy h3{font-size:clamp(2rem,2.7vw,3rem);line-height:1.05;margin-bottom:22px}.guide-copy p{font-size:15px;line-height:1.65;color:var(--muted)}.guide-copy p+p{margin-top:14px}.guide-copy a{margin-top:auto;padding-top:24px;color:var(--wine);border-bottom:1px solid var(--wine);font-size:14px;line-height:1.4}
+.team-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:45px}.guide{min-width:0;background:#f0e9dd;display:flex;flex-direction:column;overflow:hidden}.guide-image{position:relative;height:clamp(340px,37vw,520px);overflow:hidden;background:#493c38}.guide-image img{height:100%;object-position:center 37%;transition:transform .5s ease}.guide:hover img{transform:scale(1.035)}.guide-image:after{content:'';position:absolute;inset:62% 0 0;background:linear-gradient(transparent,#151d26a6)}.guide-image span{position:absolute;z-index:1;left:22px;bottom:20px;color:white;font-size:12px;letter-spacing:.09em;font-weight:600}.guide-andrey .guide-image img{object-position:71% 32%}.guide-copy{padding:29px 28px 34px;display:flex;flex:1;flex-direction:column;align-items:flex-start}.guide-copy h3{font-size:clamp(2rem,2.7vw,3rem);line-height:1.05;margin-bottom:22px}.guide-copy p{font-size:15px;line-height:1.65;color:var(--muted)}.guide-copy p+p{margin-top:14px}.guide-copy a{margin-top:auto;padding-top:24px;color:var(--wine);border-bottom:1px solid var(--wine);font-size:14px;line-height:1.4}
 .land-return{background:#efe8dc;padding:22px 28px;margin:0 0 5px;white-space:normal}.land-return strong{font-size:12px;letter-spacing:.08em}.land-return p{font-size:14px;letter-spacing:0;font-weight:400;color:var(--ink);line-height:1.55;margin-top:8px}
 @media(max-width:1000px){.sacred-lead{grid-template-columns:1fr 1fr}.sacred-text{padding:35px 8%}.sacred-visual{min-height:600px}.gallery-extra figure{height:170px}.gallery-extra figure:nth-child(4),.gallery-extra figure:nth-child(5),.gallery-extra figure:nth-child(6){height:170px}.guide-image{height:350px}.guide-copy{padding:25px 22px}.guide-copy p{font-size:14px}}
 @media(max-width:760px){.sacred-lead{display:block}.sacred-visual{min-height:420px}.sacred-text{padding:38px 6% 45px}.sacred-stories{grid-template-columns:1fr}.sacred-stories article{padding:31px 27px 35px}.gallery-extra{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:10px}.gallery-extra figure,.gallery-extra figure:nth-child(4),.gallery-extra figure:nth-child(5),.gallery-extra figure:nth-child(6){height:180px}.gallery-extra figure:nth-child(3){grid-row:auto;height:180px}.team-list{grid-template-columns:1fr;gap:20px}.guide-image{height:430px}.guide-copy{padding:30px}.guide-copy p{font-size:16px}.guide-copy h3{font-size:38px}}
@@ -100,3 +100,54 @@
 .sanctuaries{padding-bottom:78px}
 .gallery{padding-top:88px}
 @media(max-width:600px){.sanctuaries{padding-bottom:58px}.gallery{padding-top:65px}}
+
+/* Sunlit editorial edition: keep the mountain and sky bright while grounding copy. */
+.hero{background:#1d3851}
+.hero-media .hero-photo{object-position:22% 49%;filter:contrast(1.045) saturate(1.075)}
+.hero-shade{background:linear-gradient(180deg,rgba(8,24,43,.42),transparent 22%),linear-gradient(0deg,rgba(8,20,28,.87),rgba(8,20,28,.47) 29%,transparent 65%)}
+.site-header{background:linear-gradient(180deg,rgba(8,24,43,.16),transparent)}
+.intro-copy>p:not(.lead){max-width:540px}
+.place>p{max-width:350px}
+.sacred-more{margin-top:28px;border-top:1px solid #bda793;border-bottom:1px solid #bda793}
+.sacred-more>summary{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 8px;list-style:none;cursor:pointer;font-size:16px;font-weight:600;letter-spacing:.015em;color:var(--wine)}
+.sacred-more>summary span{font-size:25px;line-height:1;transition:transform .2s}
+.sacred-more[open]>summary span{transform:rotate(45deg)}
+.sacred-more .sacred-stories{margin:0 0 25px}
+.sanctuaries{background:#f6f2e9}
+.gallery{background:#182129;color:#fff}
+.gallery .section-heading>p{color:#e5ddd4}
+.gallery h2 em{color:#f3c768}
+.gallery .section-label{color:#e9c075}
+.gallery img{filter:contrast(1.055) saturate(1.055)}
+.gallery-extra{grid-template-columns:repeat(2,minmax(0,1fr))}
+.gallery-extra figure,.gallery-extra figure:nth-child(4),.gallery-extra figure:nth-child(5),.gallery-extra figure:nth-child(6){height:280px}
+.gallery-wide img{object-position:center 45%}
+.flight-timeline{min-width:0;align-self:start;border-top:1px solid #ffffff62}
+.flight-timeline>summary{display:flex;justify-content:space-between;align-items:center;gap:16px;list-style:none;cursor:pointer;padding:15px 0;color:#fff;font-size:15px;font-weight:600}
+.flight-timeline>summary span{font-size:24px;line-height:1;color:var(--yellow);transition:transform .2s}
+.flight-timeline[open]>summary span{transform:rotate(45deg)}
+.flight-timeline .flight-days{margin-top:9px}
+.flight-timeline .flight-note{grid-column:auto;margin-top:20px}
+.guide{background:#f6f1e9;border:1px solid #e2d9cd}
+@media(max-width:700px){
+ .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:230px 210px 180px}
+ .gallery-wide{grid-column:1/-1;grid-row:1}
+ .gallery-tall{grid-column:1;grid-row:2/4}
+ .gallery-grid figure:nth-child(3){grid-column:2;grid-row:2}
+ .gallery-grid figure:nth-child(4){grid-column:2;grid-row:3}
+ .gallery-extra figure{height:175px}
+ .flight-timeline{margin-top:25px}
+}
+@media(max-width:600px){
+ .hero-media .hero-photo{object-position:center 50%}
+ .hero-shade{background:linear-gradient(180deg,rgba(8,24,43,.36),transparent 23%),linear-gradient(0deg,rgba(8,20,28,.91),rgba(8,20,28,.56) 38%,transparent 74%)}
+ .place-image{aspect-ratio:1.55}
+ .sacred-more>summary{font-size:15px}
+ .gallery-grid{grid-template-rows:205px 190px 165px}
+ .gallery-extra{gap:10px}
+ .gallery-extra figure{height:150px}
+}
+@media(max-width:380px){
+ .hero-inner{margin-bottom:116px}
+ .hero-caption{font-size:10px;line-height:1.5;letter-spacing:.045em}
+}
