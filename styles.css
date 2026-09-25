@@ -220,5 +220,55 @@
 /* Keep Simona and her camera in frame across card sizes. */
 .guide-simona .guide-image img{object-position:center 76%}
 
-/* Keep the candle, hands and bowls visible in the meditation image. */
-.practice-image img{object-position:center 75%}
+/* The supplied butter-lamp photograph keeps its full composition against a soft dark surround. */
+.practice-image{position:relative;display:grid;place-items:center;isolation:isolate;background:#220e0a}
+.practice-image::before{content:"";position:absolute;inset:-28px;z-index:-1;background:url('assets/buddhist-butter-lamps.jpg') center / cover;filter:blur(28px) brightness(.48)}
+.practice-image img{width:100%;height:auto;max-height:100%;object-fit:contain;object-position:center;box-shadow:0 24px 65px #12060455}
+
+.contact-hint{display:block;margin-top:15px;color:#f1dce4;font-size:14px}
+.mobile-contact-cta{display:none}
+.contact-dialog,.gallery-lightbox{border:0;padding:0;max-width:none;max-height:none}
+.contact-dialog:not([open]),.gallery-lightbox:not([open]){display:none}
+.contact-dialog{width:min(540px,calc(100vw - 32px));background:var(--paper);color:var(--ink);box-shadow:0 28px 90px #120b12a8}
+.contact-dialog::backdrop,.gallery-lightbox::backdrop{background:#100e11c9;backdrop-filter:blur(6px)}
+.contact-dialog-inner{position:relative;padding:48px 46px 42px}
+.contact-dialog-close,.gallery-lightbox-close{position:absolute;top:14px;right:18px;border:0;background:transparent;color:inherit;font-size:32px;line-height:1;cursor:pointer}
+.contact-dialog h2{font-size:clamp(2.6rem,5vw,4.1rem);margin-bottom:23px}
+.contact-dialog-inner>p{color:var(--muted);font-size:16px;line-height:1.55}
+.contact-dialog .section-label{margin-bottom:18px;color:var(--red)}
+.contact-options{display:grid;gap:10px;margin-top:32px}
+.contact-options a{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 22px;border:1px solid #d6cbbb;background:#fffdf9;transition:background .2s,transform .2s}
+.contact-options a:hover{background:#f3e9d8;transform:translateY(-2px)}
+.contact-options strong{font-size:20px;font-weight:600}
+.contact-options span{font-size:14px;color:var(--wine);text-align:right}
+.contact-dialog-inner .contact-dialog-note{margin-top:23px;font-size:13px;color:#55514e}
+
+.prep-details{max-width:1000px;margin-top:32px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.prep-details summary{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:19px 0;list-style:none;cursor:pointer;font-size:18px;font-weight:600}
+.prep-details>div{padding:0 0 24px;max-width:840px;font-size:15px;line-height:1.7;color:#4e4b47}
+.field-footnote{font-size:14px;color:#514e49}
+
+.gallery figure[role="button"]{cursor:zoom-in}
+.gallery figure[role="button"]:focus-visible{outline:3px solid var(--yellow);outline-offset:4px}
+.gallery-lightbox{width:min(94vw,1400px);height:min(92vh,900px);background:#121417;color:#fff;box-shadow:0 28px 90px #000b}
+.gallery-lightbox[open]{display:grid;grid-template-columns:64px minmax(0,1fr) 64px;align-items:center}
+.gallery-lightbox img{grid-column:2;grid-row:1;width:100%;height:100%;max-height:92vh;object-fit:contain}
+.gallery-lightbox-prev,.gallery-lightbox-next{border:0;background:transparent;color:#fff;font-size:31px;cursor:pointer;height:100%;min-height:48px}
+.gallery-lightbox-prev{grid-column:1;grid-row:1}
+.gallery-lightbox-next{grid-column:3;grid-row:1}
+.gallery-lightbox-close{z-index:1;top:8px;right:14px;color:#fff;background:#121417a8;width:40px;height:40px;border-radius:50%}
+
+@media(max-width:900px){.practice-image{height:auto;aspect-ratio:680/442;max-height:410px}.practice-image img{height:100%;object-fit:cover;box-shadow:none}}
+@media(max-width:700px){
+  .mobile-contact-cta.is-visible{display:flex;position:fixed;z-index:40;left:14px;right:14px;bottom:max(12px,env(safe-area-inset-bottom));align-items:center;justify-content:space-between;min-height:54px;padding:12px 22px;background:var(--yellow);color:#292521;font-size:15px;font-weight:700;box-shadow:0 10px 35px #1d142566}
+  .mobile-contact-cta span{font-size:23px;line-height:1}
+  .contact-dialog-inner{padding:42px 24px 28px}
+  .contact-dialog h2{font-size:42px}
+  .contact-options a{padding:17px}
+  .contact-options strong{font-size:18px}
+  .contact-options span{font-size:13px}
+  .gallery-lightbox{width:100vw;height:100dvh}
+  .gallery-lightbox[open]{grid-template-columns:42px minmax(0,1fr) 42px}
+  .gallery-lightbox img{max-height:100dvh}
+  .gallery-lightbox-prev,.gallery-lightbox-next{font-size:24px}
+}
